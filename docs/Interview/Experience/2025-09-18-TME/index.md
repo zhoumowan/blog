@@ -14,21 +14,21 @@ tags:
 2. ReactRouter 的实现原理。
 
    :::tip 📌 回答
-   React Router 的实现原理可以概括为：它通过 BrowserRouter 或 HashRouter 来封装路由容器，内部利用 History API（pushState、replaceState、popstate）或 hashchange 事件监听 URL 的变化；当地址栏发生改变时，Router 会更新自身维护的 location 对象，并通过 React Context 向下传递。每一个 Route 组件在渲染时都会订阅这个 location，根据配置的 path 使用路由匹配算法（支持动态参数、通配符、嵌套）判断是否需要渲染对应的组件。与此同时，Link 和 Navigate 组件会拦截跳转行为，调用 history.push/replace 来修改 URL，而不会触发浏览器的默认刷新，从而实现单页应用的无刷新导航。整个过程可以总结为：URL 改变 → Router 更新上下文 → Route 匹配 → 渲染组件，这样就完成了前端路由系统。
+   React Router 的实现原理可以概括为：它通过 BrowserRouter 或 HashRouter 来封装路由容器，内部利用 History API（pushState、replaceState、popState）或 hashChange 事件监听 URL 的变化；当地址栏发生改变时，Router 会更新自身维护的 location 对象，并通过 React Context 向下传递。每一个 Route 组件在渲染时都会订阅这个 location，根据配置的 path 使用路由匹配算法（支持动态参数、通配符、嵌套）判断是否需要渲染对应的组件。与此同时，Link 和 Navigate 组件会拦截跳转行为，调用 history.push/replace 来修改 URL，而不会触发浏览器的默认刷新，从而实现单页应用的无刷新导航。整个过程可以总结为：URL 改变 → Router 更新上下文 → Route 匹配 → 渲染组件，这样就完成了前端路由系统。
    :::
 
 3. History 和 Hash 的区别。
 
    :::tip 📌 回答
    1. Hash 路由
-   - 原理：利用 location.hash 和 hashchange 事件，# 后面的内容不会被浏览器当作真正的 URL 请求发送到服务端。
+   - 原理：利用 location.hash 和 hashChange 事件，# 后面的内容不会被浏览器当作真正的 URL 请求发送到服务端。
    - URL 样式：<http://example.com/#/user/123>。
    - 刷新后请求：浏览器只会请求 <http://example.com/>，不会带上 hash，天然避免了 404 问题。
    - 兼容性：老浏览器（IE9+）就支持，适合对兼容性要求高的场景。
    - 缺点：URL 不够美观，SEO 不友好。
 
    2. History 路由
-   - 原理：基于 HTML5 的 history.pushState / replaceState 和 popstate 事件，实现前端修改路径但不刷新页面。
+   - 原理：基于 HTML5 的 history.pushState / replaceState 和 popState 事件，实现前端修改路径但不刷新页面。
    - URL 样式：<http://example.com/user/123>，更接近真实地址。
    - 刷新后请求：浏览器会真的请求 /user/123，所以如果后端没有配置兜底（通常转发到 index.html），就会返回 404。
    - 优点：URL 美观，语义化强，利于 SEO。
