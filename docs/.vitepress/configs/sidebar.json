@@ -303,6 +303,14 @@
         {
           "text": "useCallback 和 useMemo",
           "link": "/Frontend/React/UseCallback-UseMemo"
+        },
+        {
+          "text": "服务端渲染",
+          "link": "/Frontend/React/Server-Side-Rendering"
+        },
+        {
+          "text": "NextJS",
+          "link": "/Frontend/React/NextJS"
         }
       ]
     },

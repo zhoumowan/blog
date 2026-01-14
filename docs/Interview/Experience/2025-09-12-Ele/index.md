@@ -22,7 +22,7 @@ tags:
     <<< ./2.js
     :::
 
-3. 给定一个数组 nums，nums 有多少个子序列在 Fibonacci 序列中。<el-tag type='danger'>Claude 懵逼了</el-tag>
+3. 给定一个数组 nums 并确定 nums 有多少个子序列在 Fibonacci 序列中。<el-tag type='danger'>Claude 懵逼了</el-tag>
 
     :::details 🔍 展开代码
     <<< ./3.js

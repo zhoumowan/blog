@@ -77,12 +77,6 @@ export const NAV_DATA: NavData[] = [
         icon: "https://www.mianshipai.com/favicon.ico",
       },
       {
-        title: "前端面试导航",
-        link: "https://www.codecrack.cn/zh/",
-        desc: "面试宝典·知识体系精选",
-        icon: "https://www.codecrack.cn/img/favicon.svg",
-      },
-      {
         title: "LeetCode Hot 100",
         link: "https://leetcode.cn/studyplan/top-100-liked/",
         desc: "LeetCode 热门 100 题",

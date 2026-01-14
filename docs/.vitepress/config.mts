@@ -75,13 +75,6 @@ export default defineConfig({
     `,
     ],
     ["link", { rel: "icon", href: "/svg/logo.svg" }],
-    [
-      "link",
-      {
-        rel: "stylesheet",
-        href: "https://chinese-fonts-cdn.deno.dev/packages/lywkpmydb/dist/LXGWWenKaiScreen/result.css",
-      },
-    ],
   ],
   themeConfig: {
     outline: {
