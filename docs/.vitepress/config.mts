@@ -8,9 +8,9 @@ import sidebar from "./configs/sidebar.json";
 
 const baseUrl = "https://blog.wkndnite-tech.cn";
 const RSS: RSSOptions = {
-  title: "周末晚的岛屿",
+  title: "岛屿开发录",
   baseUrl,
-  copyright: "MIT License | 周末晚",
+  copyright: "MIT License | 岛屿开发录",
 };
 
 export default defineConfig({
@@ -37,7 +37,7 @@ export default defineConfig({
   ],
   extends: blogTheme,
   lang: "en",
-  title: "周末晚的岛屿",
+  title: "岛屿开发录",
   description: "宁鸣而死 不默而生",
   lastUpdated: true,
   head: [
