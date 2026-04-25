@@ -56,7 +56,7 @@ export default defineConfig({
         id: "LA_COLLECT",
       },
     ],
-    ["script", {}, 'LA.init({id:"3LcRCF8GiASfiv30",ck:"3LcRCF8GiASfiv30"})'],
+    ["script", {}, 'LA.init({id:"3PjhFFYrwb9tbOZK",ck:"3PjhFFYrwb9tbOZK",autoTrack:true,hashMode:true,screenRecord:true})'],
     [
       "script",
       {
