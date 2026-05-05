@@ -6,8 +6,6 @@ author: false
 
 # 笔面经验
 
-- [share](https://my.feishu.cn/wiki/YrNpwuQTIijjoVk8UCBcjBmRn2e?from=from_copylink)
-
 ## 大三实习
 - [03-19 小米日常一面](./2025-03-19-XiaoMi/index.md)
 - [03-20 腾讯音乐暑期一面](./2025-03-20-TME.md)
